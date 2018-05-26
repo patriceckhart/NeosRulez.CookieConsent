@@ -1,0 +1,23 @@
+Neos:
+  Neos:
+    fusion:
+      autoInclude:
+        NeosRulez.CookieConsent: true
+NeosRulez:
+  CookieConsent:
+    position: 'default'
+    #position: 'top'
+    #position: 'bottom-left'
+    #position: 'bottom-right'
+    layout: 'default'
+    #layout: 'classic'
+    #layout: 'edgeless'
+    #layout: 'wire'
+    colorBanner: '#000000'
+    colorBannerText: '#FFFFFF'
+    colorButton: '#999999'
+    colorButtonText: '#FFFFFF'
+    learnMoreLink: '/privacy.html'
+    messageText: 'This website uses cookies to ensure you get the best experience on our website.'
+    dismissButtonText: 'Got it!'
+    policyLinkText: 'Learn more'

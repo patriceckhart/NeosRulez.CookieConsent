@@ -1,0 +1,29 @@
+prototype(Neos.Neos:Page) {
+
+    head {
+
+        NeosRulezCookieConsentBanner = Neos.Fusion:Template {
+            @position = 'end'
+            templatePath = 'resource://NeosRulez.CookieConsent/Private/Templates/CookieConsent/Banner.html'
+            position = ${Configuration.setting('NeosRulez.CookieConsent.position')}
+            layout = ${Configuration.setting('NeosRulez.CookieConsent.layout')}
+            colorBanner = ${Configuration.setting('NeosRulez.CookieConsent.colorBanner')}
+            colorBannerText = ${Configuration.setting('NeosRulez.CookieConsent.colorBannerText')}
+            colorButton = ${Configuration.setting('NeosRulez.CookieConsent.colorButton')}
+            colorButtonText = ${Configuration.setting('NeosRulez.CookieConsent.colorButtonText')}
+            learnMoreLink = ${Configuration.setting('NeosRulez.CookieConsent.learnMoreLink')}
+            messageText = ${Configuration.setting('NeosRulez.CookieConsent.messageText')}
+            dismissButtonText = ${Configuration.setting('NeosRulez.CookieConsent.dismissButtonText')}
+            policyLinkText = ${Configuration.setting('NeosRulez.CookieConsent.policyLinkText')}
+            @cache {
+                mode = 'uncached'
+                context {
+                    1 = 'node'
+                    2 = 'documentNode'
+                }
+            }
+        }
+
+    }
+
+}

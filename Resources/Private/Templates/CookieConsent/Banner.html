@@ -1,0 +1,28 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+{namespace fusion=Neos\Fusion\ViewHelpers}
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+    window.addEventListener("load", function(){
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "<f:format.raw>{colorBanner}</f:format.raw>",
+                    "text": "<f:format.raw>{colorBannerText}</f:format.raw>"
+                },
+                "button": {
+                    <f:if condition="{layout}==wire"><f:then>"background": "transparent",</f:then><f:else>"background": "#999999",</f:else></f:if>
+                    "text": "<f:format.raw>{colorButtonText}</f:format.raw>"<f:if condition="{layout}==wire">,
+                    "border": "{colorButton}",</f:if>
+                }
+            },
+            <f:if condition="{layout}!=default"><f:if condition="{layout}!=wire">"theme": "{layout}",</f:if></f:if>
+            <f:if condition="{position}!=default">"position": "{position}",</f:if>
+            "content": {
+                "message": "<f:format.raw>{messageText}</f:format.raw>",
+                "dismiss": "<f:format.raw>{dismissButtonText}</f:format.raw>",
+                "link": "<f:format.raw>{policyLinkText}</f:format.raw>",
+                "href": "<f:format.raw>{learnMoreLink}</f:format.raw>"
+            }
+        })});
+</script>

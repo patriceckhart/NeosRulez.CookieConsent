@@ -1,0 +1,28 @@
+{
+    "description": "A Neos CMS plugin to integrate the Cookie Banner from cookieconsent.insites.com",
+    "license": "GPL-3.0-or-later",
+    "type": "neos-plugin",
+    "name": "neosrulez/cookieconsent",
+    "authors": [
+        {
+            "name": "Patric Eckhart",
+            "email": "mail@patriceckhart.com",
+            "homepage": "http://www.patriceckhart.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "neos/neos": "*",
+        "neos/nodetypes": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "NeosRulez\\CookieConsent\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "NeosRulez.CookieConsent"
+        }
+    }
+}

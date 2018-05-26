@@ -1,0 +1,2 @@
+namespace: Site=NeosRulez.CookieConsent
+include: ProtoTypes/*
