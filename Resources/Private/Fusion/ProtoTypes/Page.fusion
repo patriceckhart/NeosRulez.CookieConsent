@@ -15,6 +15,7 @@ prototype(Neos.Neos:Page) {
             messageText = ${Configuration.setting('NeosRulez.CookieConsent.messageText')}
             dismissButtonText = ${Configuration.setting('NeosRulez.CookieConsent.dismissButtonText')}
             policyLinkText = ${Configuration.setting('NeosRulez.CookieConsent.policyLinkText')}
+            @process.1 = ${node.context.workspaceName == 'live' ? value : ''}
             @cache {
                 mode = 'uncached'
                 context {
