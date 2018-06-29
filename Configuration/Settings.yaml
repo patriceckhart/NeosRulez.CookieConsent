@@ -1,5 +1,11 @@
 Neos:
   Neos:
+    userInterface:
+      translation:
+        autoInclude:
+          NeosRulez.CookieConsent:
+            - Main
+      defaultLanguage: 'de'
     fusion:
       autoInclude:
         NeosRulez.CookieConsent: true
@@ -17,7 +23,3 @@ NeosRulez:
     colorBannerText: '#FFFFFF'
     colorButton: '#999999'
     colorButtonText: '#FFFFFF'
-    learnMoreLink: '/privacy.html'
-    messageText: 'This website uses cookies to ensure you get the best experience on our website.'
-    dismissButtonText: 'Got it!'
-    policyLinkText: 'Learn more'

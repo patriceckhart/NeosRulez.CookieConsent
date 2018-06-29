@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="NeosRulez.CookieConsent" source-language="de" datatype="plaintext">
+        <body>
+            <trans-unit id="messageText" xml:space="preserve">
+				<source>Diese Website verwendet Cookies. Durch das Nutzen dieser Website sind Sie mit der Verwendung von Cookies einverstanden.</source>
+			</trans-unit>
+            <trans-unit id="policyLinkText" xml:space="preserve">
+				<source>Mehr Informationen</source>
+			</trans-unit>
+            <trans-unit id="dismissButtonText" xml:space="preserve">
+				<source>Akzeptieren</source>
+			</trans-unit>
+            <trans-unit id="learnMoreLink" xml:space="preserve">
+				<source>/datenschutz.html</source>
+			</trans-unit>
+        </body>
+    </file>
+</xliff>

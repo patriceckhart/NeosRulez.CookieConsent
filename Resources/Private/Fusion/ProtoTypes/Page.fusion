@@ -11,10 +11,10 @@ prototype(Neos.Neos:Page) {
             colorBannerText = ${Configuration.setting('NeosRulez.CookieConsent.colorBannerText')}
             colorButton = ${Configuration.setting('NeosRulez.CookieConsent.colorButton')}
             colorButtonText = ${Configuration.setting('NeosRulez.CookieConsent.colorButtonText')}
-            learnMoreLink = ${Configuration.setting('NeosRulez.CookieConsent.learnMoreLink')}
-            messageText = ${Configuration.setting('NeosRulez.CookieConsent.messageText')}
-            dismissButtonText = ${Configuration.setting('NeosRulez.CookieConsent.dismissButtonText')}
-            policyLinkText = ${Configuration.setting('NeosRulez.CookieConsent.policyLinkText')}
+            learnMoreLink = ${Translation.translate('NeosRulez.CookieConsent:Main:learnMoreLink')}
+            messageText = ${Translation.translate('NeosRulez.CookieConsent:Main:messageText')}
+            dismissButtonText = ${Translation.translate('NeosRulez.CookieConsent:Main:dismissButtonText')}
+            policyLinkText = ${Translation.translate('NeosRulez.CookieConsent:Main:policyLinkText')}
             @process.1 = ${node.context.workspaceName == 'live' ? value : ''}
             @cache {
                 mode = 'uncached'
