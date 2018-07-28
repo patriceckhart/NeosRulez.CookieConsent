@@ -11,7 +11,7 @@
                     "text": "<f:format.raw>{colorBannerText}</f:format.raw>"
                 },
                 "button": {
-                    <f:if condition="{layout}==wire"><f:then>"background": "transparent",</f:then><f:else>"background": "#999999",</f:else></f:if>
+                    <f:if condition="{layout}==wire"><f:then>"background": "transparent",</f:then><f:else>"background": "<f:format.raw>{colorButton}</f:format.raw>",</f:else></f:if>
                     "text": "<f:format.raw>{colorButtonText}</f:format.raw>"<f:if condition="{layout}==wire">,
                     "border": "{colorButton}",</f:if>
                 }
